@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <style>
+    /* Styles for the form container */
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Styles for the heading */
+    h2 {
+        color: #333;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    /* Styles for the input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+    
+    /* Styles for the submit button */
+    input[type="submit"] {
+        background-color: #10d247;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    /* Styles for the form validation error message */
+    .error {
+        color: red;
+        font-size: 12px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+    }
+</style>
+
+
+<body>
+    
+
+    <form action="https://formsubmit.co/sudha12121975@gmail.com" method="POST">
+        <span>LEAVE AMESSAGE</span>
+        <h2>We love to hear from you</h2>
+        <input type="text" name="Name" id="name" placeholder="Enter Your Name" required>
+        <input type="email" name="Email" id="email" placeholder="Enter Your Email" required>
+        <input type="number" name="Mobile No" id="phone" placeholder="Enter Your Mobile No" required>
+        <textarea name="Query" id="query" placeholder="Your Query/Message" cols="30" rows="10" required></textarea>
+        <input type="hidden" name="_subject" value="New submission - Shopmate feedback">
+        <input class="normal" id="btn" type="submit" value="Send Query" style="background-color:#10d247;cursor: pointer;">
+        <input type="hidden" name="_next" value="https://localhost/mybuspro/index.php">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+</body>
+</html>
